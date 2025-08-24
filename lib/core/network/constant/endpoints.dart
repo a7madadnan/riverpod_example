@@ -6,8 +6,8 @@ class Endpoints {
   static const String product = 'https://fakestoreapi.com/products/';
 
   // receiveTimeout
-  static const int receiveTimeout = 15000;
+  static const Duration receiveTimeout = Duration(seconds: 1500);
 
   // connectTimeout
-  static const int connectionTimeout = 30000;
+  static const Duration connectionTimeout = Duration(seconds: 30000);
 }
