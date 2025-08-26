@@ -15,10 +15,11 @@ class JokeRepository {
       final res = await _jokeApi.fetchJokesApiRequest();
       final jokeModel = JokeModel.fromJson(res);
       return jokeModel;
-    } on DioError catch (e) {
+    } on DioException catch (e) {
       final errorMessage = DioExceptions.fromDioError(e);
       log(errorMessage.toString());
       rethrow;
     }
   }
 }
+

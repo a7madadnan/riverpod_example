@@ -10,7 +10,7 @@ class RefreshJoke extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return FloatingActionButton(
-      onPressed: ref.read(jokeDataProvider.notifier).getJoke,
+      onPressed: () {},
       child: const Icon(Icons.refresh),
     );
   }
